@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/samuelikz/Nodejs-Api/issues"
   },
-  "homepage": "https://github.com/samuelikz/Nodejs-Api#readme"
+  "homepage": "https://github.com/samuelikz/Nodejs-Api#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
 }
