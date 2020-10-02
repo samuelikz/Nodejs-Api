@@ -3,6 +3,7 @@
 
  - Tenha instalado em sua maquina o nodejs
  - Utilizando a Versão (+12)
+ - Documentação [Express.js](https://expressjs.com/)
  
  ### Iniciar projeto
  - Iniciar projeto
