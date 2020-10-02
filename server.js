@@ -4,6 +4,10 @@ const app = express();
 
 const port = process.env.PORT || 3000
 
-app.listen(port);
+app.get('/', (req, res) => {
+    res.send('Hello World!')
+  });
 
-console.log('API FUNCIONANDO NA PORTA:',port);
+app.listen(port, () => {
+    console.log(`Servidor Funcionando http://localhost:${port}`)
+  })
