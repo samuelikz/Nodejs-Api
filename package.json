@@ -1,0 +1,20 @@
+{
+  "name": "Nodejs-Api",
+  "version": "1.0.0",
+  "description": "Projeto Nodejs-Api",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/samuelikz/Nodejs-Api.git"
+  },
+  "keywords": [],
+  "author": "@Samuelikz",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/samuelikz/Nodejs-Api/issues"
+  },
+  "homepage": "https://github.com/samuelikz/Nodejs-Api#readme"
+}
