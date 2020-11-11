@@ -1,13 +1,22 @@
-const express = require('express');
+const express = require('express')
+const bodyParser = require('body-parser')
 
-const app = express();
+const app = express()
+
+app.use(bodyParser.urlencoded({ extended: true }))
+app.use(bodyParser.json())
+
+const routes = require ('./src/routes/usuarioRoutes.js')
+routes(app)
+
+app.route('/')
+.get((req, res) => {
+  res.send('Aplicação Funcionando')
+})
 
 const port = process.env.PORT || 3000
 
-app.get('/', (req, res) => {
-    res.send('Hello World!')
-  });
+app.listen(port)
 
-app.listen(port, () => {
-    console.log(`Servidor Funcionando http://localhost:${port}`)
-  })
+console.log('Servidor Funcionando na porta:',port)
+console.log(`Servidor Funcionando http://localhost:${port}`)
