@@ -161,24 +161,15 @@ $ npx sequelize init
 {
   "development": {
     "storage": "./src/database/database.sqlite3",
-    "dialect": "sqlite",
-    "define": {
-      "underscored": true
-    }
+    "dialect": "sqlite"
   },
   "test": {
     "storage": "./src/database/database.sqlite3",
-    "dialect": "sqlite",
-    "define": {
-      "underscored": true
-    }
+    "dialect": "sqlite"
   },
   "production": {
     "storage": "./src/database/database.sqlite3",
-    "dialect": "sqlite",
-    "define": {
-      "underscored": true
-    }
+    "dialect": "sqlite"
   }
 }
 ```
@@ -186,7 +177,7 @@ $ npx sequelize init
 - Criação de tabela
  
 ```sh
-$ npx sequelize-cli model:generate --name Usuario --attributes nome_usuario:string,email_usuario:string
+$ npx sequelize-cli model:generate --name Usuario --attributes nome:string,email:string
 ```
 ### Criar arquivo do banco de dados
 - Criação do banco de dados
@@ -195,5 +186,33 @@ $ npx sequelize-cli model:generate --name Usuario --attributes nome_usuario:stri
 $ npx sequelize db:migrate
 ```
 ### Conectar Arquivo Usercontrollers com a pasta models
+-Configuração inicial arquivo Usercontrollers
 
+```sh
+const Usuario = require('../models').Usuario;
+```
+### Criar Listagem dos usuarios
+- Listar usuarios
+ 
+```sh
+exports.listAll = (req, res) => {
+    Usuario.findAll().then(usuarios => {
+        res.send(usuarios);
+    }).catch(error => {
+        res.send(error);
+    })
+}
+```
+### Criar usuario
+- Criar usuarios
+ 
+```sh
+exports.listAll = (req, res) => {
+    Usuario.findAll().then(usuarios => {
+        res.send(usuarios);
+    }).catch(error => {
+        res.send(error);
+    })
+}
+```
 
