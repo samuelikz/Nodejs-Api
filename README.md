@@ -18,14 +18,14 @@ $ npm init -y
  - Instalar Dependências
  
  ```sh
- npm i -S express
- npm i -D nodemon
+ $ npm i -S express
+ $ npm i -D nodemon
 ```
 ### Criar arquivo 
 - Criar arquivo server.js
 
 ```sh
- touch server.js
+$ touch server.js
 ```
 
 ### Configurar arquivo server.js
@@ -63,7 +63,7 @@ $ npm init -y
 - daremos um start
 
 ```sh
- npm start
+$ npm start
 ```
 ### Criando Pasta src  
 - Agora vamos preparar o servidor para receber as pastas src, controllers, routes, models
@@ -115,21 +115,21 @@ exports.createOne = (req, res) => {
 - Instalação no projeto
 
 ```sh
-npm i -S sqlite3
+$ npm i -S sqlite3
 ```
 ### Instalando o Sequelize
 - Nesta API iremos utilizar o ORM Sequelize
 - Instalação no projeto
 
 ```sh
-npm i -S sequelize
+$ npm i -S sequelize
 ```
 ### Instalando o Sequelize-cli
 - Tambem iremos instalar o Sequelize-cli
 - Instalação no ambiente de desenvolvimento
 
 ```sh
-npm i -D sequelize-cli
+$ npm i -D sequelize-cli
 ```
 ### Criar Arquivo de configuração do Sequelize
 - Neste arquivo iremos configurar os arquivos do sequelize
@@ -140,7 +140,7 @@ npm i -D sequelize-cli
 const path = require('path')
 
 module.exports = {
-    "config": path.resolve('./src/config', 'config.js'),
+    "config": path.resolve('./src/config', 'config.json'),
     "models-path": path.resolve('./src/models'),
     "migrations-path": path.resolve('./src/migrations'),
     "seeders-path": path.resolve('./src/seeders')
@@ -150,5 +150,5 @@ module.exports = {
 - Iniciar o sequelize init
  
 ```sh
-npx sequelize init
+$ npx sequelize init
 ```
