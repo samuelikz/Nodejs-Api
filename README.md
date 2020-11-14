@@ -66,10 +66,10 @@ $ touch server.js
 ```sh
 $ npm start
 ```
-### Criando Pasta src  
+### Criando Pastas src  
 - Agora vamos preparar o servidor para receber as pastas src, controllers, routes, models
 - Primeiro iremos criar a pasta src
-- Dentro dela iremos criar duas pastas a controllers, routes e models
+- Dentro dela iremos criar duas pastas a controllers, routes, models e database
 
 ### Criando arquivo de rotas 
 - Agora criar o arquivo usuarioRoutes.js para receber as rotas
@@ -160,16 +160,25 @@ $ npx sequelize init
 ```sh
 {
   "development": {
-    "storage": "./database.sqlite3",
-    "dialect": "sqlite"
+    "storage": "./src/database/database.sqlite3",
+    "dialect": "sqlite",
+    "define": {
+      "underscored": true
+    }
   },
   "test": {
-    "storage": "./database.sqlite3",
-    "dialect": "sqlite"
+    "storage": "./src/database/database.sqlite3",
+    "dialect": "sqlite",
+    "define": {
+      "underscored": true
+    }
   },
   "production": {
-    "storage": "./database.sqlite3",
-    "dialect": "sqlite"
+    "storage": "./src/database/database.sqlite3",
+    "dialect": "sqlite",
+    "define": {
+      "underscored": true
+    }
   }
 }
 ```
