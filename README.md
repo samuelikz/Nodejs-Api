@@ -152,3 +152,23 @@ module.exports = {
 ```sh
 $ npx sequelize init
 ```
+### Configurar o arquivo config.json
+- Agora iremos configurar o arquivo config.json dentro da pasta models
+- Configuração inicial do Arquivo
+
+```sh
+{
+  "development": {
+    "storage": "./database.sqlite3",
+    "dialect": "sqlite"
+  },
+  "test": {
+    "storage": "./database.sqlite3",
+    "dialect": "sqlite"
+  },
+  "production": {
+    "storage": "./database.sqlite3",
+    "dialect": "sqlite"
+  }
+}
+```
