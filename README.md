@@ -64,5 +64,49 @@ $ npm init -y
 ```sh
  npm start
 ```
+### Criando Pasta src  
+- Agora vamos preparar o servidor para receber as pastas src, controllers, routes
+- Primeiro iremos criar a pasta src
+- Dentro dela iremos criar duas pastas a controllers, e routes
 
+### Criando arquivo de rotas 
+- Agora criar o arquivo usuarioRoutes.js para receber as rotas
+- Configuração inicial do Arquivo
+
+```sh
+ module.exports = function (app) {
+    const usuarios = require ('../controllers/usuariosController')
+    app.route('/usuarios')
+        .get(usuarios.listAll)
+        .post(usuarios.createOne)
+}
+```
+### Criando arquivo usuariosController 
+- Agora criar o arquivo usuariosController.js
+- Configuração inicial do Arquivo
+
+```sh
+exports.listAll = function (req, res) {
+    let usuarios = [
+        {
+            nome: 'Samuel',
+            email: 'aloi@gmail.com.nr'
+        },
+        {
+            nome: 'karol',
+            email: 'aloi@gmail.com.nr'
+        }
+    ]
+    res.send(usuarios)
+}
+
+exports.createOne = (req, res) => {
+    let response = {
+        message : 'Usuario Criado',
+        data: req.body
+    }
+    res.send(response)
+ }
+}
+```
  
