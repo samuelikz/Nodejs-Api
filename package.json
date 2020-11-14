@@ -2,7 +2,7 @@
   "name": "nodejsapi",
   "version": "1.0.0",
   "description": "Projeto Nodejs-Api",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "nodemon server.js"
@@ -19,9 +19,12 @@
   },
   "homepage": "https://github.com/samuelikz/Nodejs-Api#readme",
   "dependencies": {
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "sequelize": "^6.3.5",
+    "sqlite3": "^5.0.0"
   },
   "devDependencies": {
-    "nodemon": "^2.0.4"
+    "nodemon": "^2.0.4",
+    "sequelize-cli": "^6.2.0"
   }
 }
