@@ -186,7 +186,7 @@ $ npx sequelize init
 - Criação de tabela
  
 ```sh
-$ npx sequelize-cli model:generate --name Usuarios --attributes nome_usuario:string,email_usuario:string
+$ npx sequelize-cli model:generate --name Usuario --attributes nome_usuario:string,email_usuario:string
 ```
 ### Criar arquivo do banco de dados
 - Criação do banco de dados
@@ -194,4 +194,6 @@ $ npx sequelize-cli model:generate --name Usuarios --attributes nome_usuario:str
 ```sh
 $ npx sequelize db:migrate
 ```
+### Conectar Arquivo Usercontrollers com a pasta models
+
 
