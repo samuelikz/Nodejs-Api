@@ -188,3 +188,10 @@ $ npx sequelize init
 ```sh
 $ npx sequelize-cli model:generate --name Usuarios --attributes nome_usuario:string,email_usuario:string
 ```
+### Criar arquivo do banco de dados
+- Criação do banco de dados
+ 
+```sh
+$ npx sequelize db:migrate
+```
+
