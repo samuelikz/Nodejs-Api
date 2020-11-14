@@ -182,3 +182,9 @@ $ npx sequelize init
   }
 }
 ```
+### Criar tabela com o sequelize
+- Criação de tabela
+ 
+```sh
+$ npx sequelize-cli model:generate --name Usuarios --attributes nome_usuario:string,email_usuario:string
+```
