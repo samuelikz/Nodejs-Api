@@ -4,6 +4,7 @@
  - Tenha instalado em sua maquina o nodejs
  - Utilizando a Versão (+12)
  - Documentação [Express.js](https://expressjs.com/)
+ - Documentação [Sequelize ORM](https://sequelize.org/master/index.html)
  
  ### Iniciar projeto
  - Iniciar projeto
@@ -65,9 +66,9 @@ $ npm init -y
  npm start
 ```
 ### Criando Pasta src  
-- Agora vamos preparar o servidor para receber as pastas src, controllers, routes
+- Agora vamos preparar o servidor para receber as pastas src, controllers, routes, models
 - Primeiro iremos criar a pasta src
-- Dentro dela iremos criar duas pastas a controllers, e routes
+- Dentro dela iremos criar duas pastas a controllers, routes e models
 
 ### Criando arquivo de rotas 
 - Agora criar o arquivo usuarioRoutes.js para receber as rotas
@@ -109,4 +110,45 @@ exports.createOne = (req, res) => {
  }
 }
 ```
+### Instalando Sqlite
+- Nesta API iremos utilizar o sqlite3
+- Instalação no projeto
+
+```sh
+npm i -S sqlite3
+```
+### Instalando o Sequelize
+- Nesta API iremos utilizar o ORM Sequelize
+- Instalação no projeto
+
+```sh
+npm i -S sequelize
+```
+### Instalando o Sequelize-cli
+- Tambem iremos instalar o Sequelize-cli
+- Instalação no ambiente de desenvolvimento
+
+```sh
+npm i -D sequelize-cli
+```
+### Criar Arquivo de configuração do Sequelize
+- Neste arquivo iremos configurar os arquivos do sequelize
+- Criar arquivo .sequelizerc
+- Configurar o arquivo
+
+```sh
+const path = require('path')
+
+module.exports = {
+    "config": path.resolve('./src/config', 'config.js'),
+    "models-path": path.resolve('./src/models'),
+    "migrations-path": path.resolve('./src/migrations'),
+    "seeders-path": path.resolve('./src/seeders')
+}
+```
+### Iniciar o init Sequelize
+- Iniciar o sequelize init
  
+```sh
+npx sequelize init
+```
