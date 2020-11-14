@@ -30,6 +30,7 @@ $ touch server.js
 
 ### Configurar arquivo server.js
 - Configuração inicial
+- Importação do express
 
 ```sh
  - Arquivo server.js
