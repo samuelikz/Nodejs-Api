@@ -191,7 +191,7 @@ $ npx sequelize db:migrate
 ```sh
 const Usuario = require('../models').Usuario;
 ```
-### Criar Listagem dos usuarios
+### Criar Listagem dos usuarios Arquivo Usercontrollers
 - Listar usuarios
  
 ```sh
@@ -203,7 +203,7 @@ exports.listAll = (req, res) => {
     })
 }
 ```
-### Criar usuario
+### Criar usuario Arquivo Usercontrollers
 - Criar usuarios
  
 ```sh
