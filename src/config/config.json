@@ -1,0 +1,23 @@
+{
+  "development": {
+    "storage": "./src/database/database.sqlite3",
+    "dialect": "sqlite",
+    "define": {
+      "underscored": true 
+    }
+  },
+  "test": {
+    "storage": "./src/database/database.sqlite3",
+    "dialect": "sqlite",
+    "define": {
+      "underscored": true
+    }
+  },
+  "production": {
+    "storage": "./src/database/database.sqlite3",
+    "dialect": "sqlite",
+    "define": {
+      "underscored": true
+    }
+  }
+}

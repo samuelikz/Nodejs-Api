@@ -17,6 +17,6 @@ app.route('/')
 const port = process.env.PORT || 3000
 
 app.listen(port)
-
-console.log('Servidor Funcionando na porta:',port)
+console.log('´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´')
 console.log(`Servidor Funcionando http://localhost:${port}`)
+console.log('.............................................')
