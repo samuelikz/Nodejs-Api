@@ -1,7 +1,7 @@
 
 ### Importante!
 
- - Tenha instalado em sua maquina o nodejs
+ - Tenha instalado em sua máquina o nodejs
  - Utilizando a Versão (+12)
  - Documentação [Express.js](https://expressjs.com/)
  - Documentação [Sequelize ORM](https://sequelize.org/master/index.html)
@@ -49,7 +49,7 @@ $ touch server.js
   })
 ```
 ### Configurar arquivo package.json
-- Configuração parar dar start com o npm
+- Configuração para dar start com o npm
 
 ```sh
  - Adicionar Script ao package.json
@@ -60,7 +60,7 @@ $ touch server.js
   }
 ```
 ### Start  
-- Apos configurar o arquivo server.js
+- Após configurar o arquivo server.js
 - daremos um start
 
 ```sh
@@ -126,7 +126,7 @@ $ npm i -S sqlite3
 $ npm i -S sequelize
 ```
 ### Instalando o Sequelize-cli
-- Tambem iremos instalar o Sequelize-cli
+- Também iremos instalar o Sequelize-cli
 - Instalação no ambiente de desenvolvimento
 
 ```sh
@@ -191,7 +191,7 @@ $ npx sequelize db:migrate
 ```sh
 const Usuario = require('../models').Usuario;
 ```
-### Criar Listagem dos usuarios Arquivo Usercontrollers
+### Criar Listagem dos usuários Arquivo Usercontrollers
 - Listar usuarios
  
 ```sh
@@ -204,7 +204,7 @@ exports.listAll = (req, res) => {
 }
 ```
 ### Criar usuario Arquivo Usercontrollers
-- Criar usuarios
+- Criar usuários
  
 ```sh
 exports.listAll = (req, res) => {
